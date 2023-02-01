@@ -1,0 +1,19 @@
+package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func nameConverter(str string) string {
+	str = strings.ToLower(str)
+	str = strings.ReplaceAll(str, " ", "_")
+	str = strings.Join([]string{str, ".go"}, "")
+	return str
+}
+
+func main() {
+	strvalue := "Greatest Common Divisor of Strings"
+	paraPass := nameConverter(strvalue)
+	fmt.Println(paraPass)
+}

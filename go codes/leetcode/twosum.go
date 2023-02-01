@@ -16,34 +16,30 @@ import "fmt"
 // Time complexity: O(n)
 // Space complexity: O(n)
 func twoSum(nums []int, target int) []int {
-	record := make(map[int]int)
+	//HAsh map
+	hm := make(map[int]int)
 
-	for i, j := range nums {
-		// fmt.Println("I", i)
-		fmt.Println("J", j)
-		complement := target - j
-		fmt.Println("Com", complement)
-		if res, ok := record[complement]; ok {
-			fmt.Println("Res,I", res, i)
-
-			return []int{res, i}
+	for i, v := range nums {
+		_, ok := hm[v]
+		if ok {
+			return []int{i, hm[v]}
 		}
-		record[j] = i
-		fmt.Println("Reco-rd", record[j], i)
+		hm[target-v] = i
+
 	}
-	return []int{}
+	return nil
 }
 
 func main() {
 	intArr := []int{1, 2, 3, 4, 5, 6}
-	targetNum := 6
+	targetNum := 100
 
 	result := twoSum(intArr, targetNum)
 
 	fmt.Printf("%d Final Result Value", result)
 }
 
-//Second solution
+// Second solution
 // brute force
 // Time complexity: O(n^2)
 // Space complexity: O(1)
