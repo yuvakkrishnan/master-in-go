@@ -13,7 +13,7 @@ func nameConverter(str string) string {
 }
 
 func main() {
-	strvalue := "Greatest Common Divisor of Strings"
+	strvalue := "example-2 multiple Goroutines "
 	paraPass := nameConverter(strvalue)
 	fmt.Println(paraPass)
 }
