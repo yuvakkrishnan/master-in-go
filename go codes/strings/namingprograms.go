@@ -13,7 +13,9 @@ func nameConverter(str string) string {
 }
 
 func main() {
-	strvalue := "example-2 multiple Goroutines "
+	strvalue := "Buffered or Unbuffered Channel"
 	paraPass := nameConverter(strvalue)
 	fmt.Println(paraPass)
 }
+
+// ex-5 Buffered or Unbuffered Channel
