@@ -9,7 +9,7 @@ type ListNode struct {
 func addTwoNumbers1(l1 *ListNode, l2 *ListNode) *ListNode {
 	head := ListNode{Val: -1}
 	cur := &head
-	carry := 0
+	carry := 0     
 	for l1 != nil && l2 != nil {
 		sum := l1.Val + l2.Val + carry
 		val := sum % 10

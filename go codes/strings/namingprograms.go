@@ -13,7 +13,7 @@ func nameConverter(str string) string {
 }
 
 func main() {
-	strvalue := "Buffered or Unbuffered Channel"
+	strvalue := "Longest Palindromic Substring"
 	paraPass := nameConverter(strvalue)
 	fmt.Println(paraPass)
 }

@@ -20,6 +20,8 @@ func main() {
 	go dispaly("Dart")
 	time.Sleep(time.Second * 1)
 
+	fmt.Println("Main end")
+
 }
 
 // Benefits of Goroutines
