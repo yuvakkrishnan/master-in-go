@@ -1,28 +1,17 @@
 package main
 
-import (
-	"fmt"
-	"sync"
-	"time"
-)
+import "fmt"
 
-func a() {
-	for i := 0; i < 10; i++ {
-		time.Sleep(250 * time.Millisecond)
-		fmt.Printf("%d\n", i)
+func reverse(s string) string {
+	letter := []rune(s)
+	for i, j := 0, len(letter)-1; i < j; i, j = i+1, j-1 {
+		letter[i], letter[j] = letter[j], letter[i]
 	}
+	return string(letter)
 }
-func b() {
-	for i := 'a'; i < 'o'; i++ {
-		time.Sleep(250 * time.Millisecond)
-		fmt.Printf("%c\n", i)
-	}
-}
+
 func main() {
-	var wg sync.WaitGroup
-	wg.Add(2)
-	go a()
-	go b()
-	wg.Done()
-	fmt.Println("Main Routine End")
+	d := "Hello"
+	e := reverse(d)
+	fmt.Println(e)
 }
