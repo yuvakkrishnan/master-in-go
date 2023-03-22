@@ -1,0 +1,40 @@
+Arithmetic Operators:
+These operators are used to perform basic arithmetic operations like addition, subtraction, multiplication, division, and modulus.
+Examples:
+Addition (+): adds two operands
+Subtraction (-): subtracts one operand from another
+Multiplication (*): multiplies two operands
+Division (/): divides one operand by another
+Modulus (%): returns the remainder of the division
+Comparison Operators:
+These operators are used to compare two values and return a boolean value (true or false) based on the comparison.
+Examples:
+Equal to (==): checks if two operands are equal
+Not equal to (!=): checks if two operands are not equal
+Greater than (>): checks if one operand is greater than the other
+Less than (<): checks if one operand is less than the other
+Greater than or equal to (>=): checks if one operand is greater than or equal to the other
+Less than or equal to (<=): checks if one operand is less than or equal to the other
+Logical Operators:
+These operators are used to combine two or more boolean expressions and return a boolean value.
+Examples:
+AND (&&): returns true if both expressions are true
+OR (||): returns true if either expression is true
+NOT (!): returns the opposite boolean value of the expression
+Bitwise Operators:
+These operators are used to perform bitwise operations on binary numbers.
+Examples:
+Bitwise AND (&): performs a bitwise AND operation on two operands
+Bitwise OR (|): performs a bitwise OR operation on two operands
+Bitwise XOR (^): performs a bitwise XOR operation on two operands
+Bitwise left shift (<<): shifts the bits of the first operand to the left by the number of positions specified by the second operand
+Bitwise right shift (>>): shifts the bits of the first operand to the right by the number of positions specified by the second operand
+Assignment Operators:
+These operators are used to assign values to variables.
+Examples:
+Assignment (=): assigns the value of the right operand to the left operand
+Addition assignment (+=): adds the value of the right operand to the left operand and assigns the result to the left operand
+Subtraction assignment (-=): subtracts the value of the right operand from the left operand and assigns the result to the left operand
+Multiplication assignment (*=): multiplies the value of the left operand by the value of the right operand and assigns the result to the left operand
+Division assignment (/=): divides the value of the left operand by the value of the right operand and assigns the result to the left operand
+These are some of the most commonly used operators in Go, but there are more operators available in the language as well.

@@ -1,0 +1,290 @@
+// package main
+
+// import "fmt"
+
+// func main() {
+// 	var originalCount int = 10
+// 	var eatenCount int = 4
+
+// 	fmt.Println("I started with", originalCount, "apples.")
+// 	fmt.Println("some jerk ate", eatenCount, "apples.")
+// 	fmt.Println("There are", originalCount-eatenCount, "apples left.")
+
+// }
+
+// // Quiz :
+
+// // To make a working program that will produce the given
+// // output
+
+// // output:
+// // I started with 10 apples.
+// // some jerk ate 4 apples.
+// // there are 6 apples left.
+
+// // 2 Question
+// // EXERCISE: Age Seasons
+// //
+// //  Let's start simple. Print the expected outputs,
+// //  depending on the age variable.
+// //
+// // EXPECTED OUTPUT
+// //  If age is greater than 60, print:
+// //    Getting older
+// //  If age is greater than 30, print:
+// //    Getting wiser
+// //  If age is greater than 20, print:
+// //    Adulthood
+// //  If age is greater than 10, print:
+// //    Young blood
+// //  Otherwise, print:
+// //    Booting up
+// // ---------------------------------------------------------
+
+// func main() {
+// 	// Change this accordingly to produce the expected outputs
+// 	// age := 10
+
+// 	// Type your if statement here.
+// }
+// // 2 Question
+
+// // Answer
+
+// package main
+
+// import "fmt"
+
+// func main() {
+
+// 	var age int
+// 	fmt.Println("Enter Your Age :")
+// 	fmt.Scanln(&age)
+
+// 	if age > 60 {
+// 		fmt.Println("Getting older")
+// 	} else if age > 30 {
+// 		fmt.Println("Getting wiser")
+// 	} else if age > 20 {
+// 		fmt.Println("Adulthood")
+
+// 	} else if age > 10 {
+// 		fmt.Println(" =Young blood")
+// 	} else {
+// 		fmt.Println("Booting up")
+// 	}
+// }
+// // Answer
+
+// EXERCISE: Simplify It
+// //
+// //  Can you simplify the if statement inside the code below?
+// //
+// //  When:
+// //    isSphere == true and
+// //    radius is equal or greater than 200
+// //
+// //    It will print "It's a big sphere."
+// //
+// //    Otherwise, it will print "I don't know."
+// //
+// // EXPECTED OUTPUT
+// //  It's a big sphere.
+
+// package main
+
+// import "fmt"
+
+// func main() {
+// 	isSphere, radius := true, 100
+// 	var big bool
+// 	if radius >= 50 {
+// 		if radius >= 100 {
+// 			if radius >= 200 {
+// 				big = true
+// 			}
+// 		}
+// 	}
+
+// 	if big != true {
+// 		fmt.Println("I dont know.")
+// 	} else if !(isSphere == false) {
+// 		fmt.Println("Its a big sphere.")
+// 	} else {
+// 		fmt.Println("I dont Know.")
+// 	}
+// }
+
+// // Vowel or Consonant
+// package main
+
+// import (
+// 	"fmt"
+// 	"os"
+// )
+
+// func main() {
+// 	args := os.Args
+
+// 	if len(args) != 2 || len(args[1]) != 1 {
+// 		fmt.Println("Give me a Letter")
+// 		return
+// 	}
+
+// 	s := args[1]
+// 	if s == "a" || s == "e" || s == "i" || s == "o" || s == "u" {
+// 		fmt.Println("%q is a vowel.", s)
+// 	} else if s == "w" || s == "y" {
+// 		fmt.Println("%q is sometimes a vowel, sometimes not.", s)
+
+// 	} else {
+// 		fmt.Println("%q is a consonant.", s)
+// 	}
+
+// }
+
+// // Single User Name Access
+
+// package main
+
+// import (
+// 	"fmt"
+// 	"os"
+// )
+
+// func main() {
+
+// 	args := os.Args
+
+// 	if len(args) != 3 {
+// 		fmt.Println("Usage [Username] [Password]")
+// 		return
+// 	}
+// 	u, p := args[1], args[2]
+// 	if u != "jack" {
+// 		fmt.Printf("Access denied for %q \n", u)
+// 	} else if p != "7779" {
+// 		fmt.Printf("Invalid Password %q \n", u)
+
+// 	} else {
+// 		fmt.Printf("Successfully Initiated %q %q \n", u, p)
+// 	}
+// }
+
+//  // Multiple User Name Access
+
+// package main
+
+// import (
+// 	"fmt"
+// 	"os"
+// )
+
+// const (
+// 	user1       = "yuvak"
+// 	pass1       = "779"
+// 	user2       = "karishma"
+// 	pass2       = "143"
+// 	errUser     = "Access Denied for %q \n"
+// 	errPass     = "Invalid password %q \n"
+// 	aunTication = "Footprint Successfull %q \n"
+// 	usage       = "Username [username][Password]"
+// )
+
+// func main() {
+
+// 	args := os.Args
+// 	if len(args) != 3 {
+// 		fmt.Printf(usage)
+// 		return
+// 	}
+
+// 	u, p := args[1], args[2]
+// 	if u != user1 && u != user2 {
+// 		fmt.Printf(errUser, u)
+// 	} else if u == user1 && p == pass1 || u == user2 && p == pass2 {
+// 		fmt.Printf(aunTication, u, p)
+
+// 	} else {
+// 		fmt.Printf(errPass, p)
+// 	}
+// }
+
+*********************************Movie ratings
+
+package main
+
+import (
+	"fmt"
+	"os"
+	"strconv"
+)
+
+func main() {
+	if a := os.Args; len(a) != 2 {
+		fmt.Println("Requires age")
+		return
+
+	} else if n, err := strconv.Atoi(a[1]); err != nil || n < 0 {
+		fmt.Printf(`Other characters Cannot be age: %q`+"\n ", os.Args[1])
+		return
+
+	} else if n >= 13 && n <= 17 {
+		fmt.Printf("PG-13")
+	} else if n > 17 {
+		fmt.Printf("R-Rated")
+	} else if n < 13 {
+		fmt.Printf("PG-Rated")
+	}
+}
+*********************************Movie ratings
+
+
+EXERCISE: Odd or Even
+//
+//  1. Get a number from the command-line.
+//
+//  2. Find whether the number is odd, even and divisible by 8.
+//
+// RESTRICTION
+//  Handle the error. If the number is not a valid number,
+//  or it's not provided, let the user know.
+//
+// EXPECTED OUTPUT
+//  go run main.go 16
+//    16 is an even number and it's divisible by 8
+//
+//  go run main.go 4
+//    4 is an even number
+//
+//  go run main.go 3
+//    3 is an odd number
+//
+//  go run main.go
+//    Pick a number
+//
+//  go run main.go ABC
+//    "ABC" is not a number
+package main
+
+import (
+	"fmt"
+	"os"
+	"strconv"
+)
+
+func main() {
+	if eod := os.Args; len(eod) < 2 {
+		fmt.Println("Pick a number")
+		return
+	} else if engal, err := strconv.Atoi(eod[1]); err != nil {
+		fmt.Printf("%d is not a number", engal)
+	} else if engal%2 == 0 {
+		fmt.Printf("%d is even", engal)
+
+	} else {
+		fmt.Printf("%d is odd", engal)
+	}
+
+}
+**************************************************************************************
