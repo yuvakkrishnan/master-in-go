@@ -30,10 +30,15 @@ func main() {
 		93: "Bird",
 		94: "Rabbit",
 	}
+<<<<<<< HEAD
 	for key, value := range map_2 {
 		fmt.Println("Key:", key, "Value:", value)
 
 	}
 	fmt.Println("Map-2: ", map_2)
 
+=======
+
+	fmt.Println("Map-2: ", map_2)
+>>>>>>> 825db90e4d42816866d191d319ada5f3665140f7
 }

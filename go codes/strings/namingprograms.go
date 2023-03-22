@@ -13,7 +13,11 @@ func nameConverter(str string) string {
 }
 
 func main() {
+<<<<<<< HEAD
 	strvalue := "Convert string to zigzag"
+=======
+	strvalue := "Longest Palindromic Substring"
+>>>>>>> 825db90e4d42816866d191d319ada5f3665140f7
 	paraPass := nameConverter(strvalue)
 	fmt.Println(paraPass)
 }

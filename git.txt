@@ -12,4 +12,8 @@ git push -u origin main
 …or push an existing repository from the command line
 git remote add origin https://github.com/yuvakkrishnan/Go.git
 git branch -M main
+<<<<<<< HEAD
 git push -u origin main 
+=======
+git push -u origin main
+>>>>>>> 825db90e4d42816866d191d319ada5f3665140f7

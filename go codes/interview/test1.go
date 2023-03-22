@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 Yuvakkrishnan
 Karunakar
@@ -57,3 +58,16 @@ func main() {
 	fmt.Println(orange)
 }
 How would you implement a stack and a queue in Go? Explain and provide code examples.
+=======
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	n1 := []int{10, 20, 30, 40}
+	n1 = append(n1, 100)
+	fmt.Println(len(n1), cap(n1))
+}
+>>>>>>> 825db90e4d42816866d191d319ada5f3665140f7
