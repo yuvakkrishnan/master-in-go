@@ -1,0 +1,18 @@
+{
+    "meter_id": "GAS1234",
+    "reading": 543.21,
+    "unit": "m3",
+    "timestamp": "2023-03-28T13:45:00.000Z",
+    "status": "OK",
+    "location": {
+      "latitude": 51.5074,
+      "longitude": -0.1278,
+      "address": "Buckingham Palace, London SW1A 1AA, United Kingdom"
+    },
+    "manufacturer": "Acme Gas Meters Inc.",
+    "serial_number": "ABC12345",
+    "software_version": "v1.2.3",
+    "battery_level": 85,
+    "signal_strength": -60
+  }
+  

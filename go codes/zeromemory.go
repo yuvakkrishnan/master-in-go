@@ -2,21 +2,11 @@ package main
 
 import "fmt"
 
-var N = 3
-
 func main() {
+	input := "hello world" // change this to your desired input string
 
-	m := make(map[int]*int)
-	for i := 0; i < N; i++ {
-		m[i] = &i
-	}
+	// use double quotes to enclose the input string
+	output := fmt.Sprintf("\"%s\"", input)
 
-	fmt.Println("Value1: ", m[0])
-
-	//Value1:012
-
-	for _, v := range m {
-		fmt.Println("Value2: ", *v)
-		//Value2:)012
-	}
+	fmt.Println(output)
 }
